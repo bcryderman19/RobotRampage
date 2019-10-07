@@ -8,7 +8,7 @@ public class AssaultRifle : Gun
     {
         base.Update();
         //Automatic fire
-        if (Input.GetMouseButton(0) && (Time.time - lastFireTime) > fireRate)
+        if (Input.GetMouseButton(0) && Time.time - lastFireTime > fireRate)
         {
             lastFireTime = Time.time;
             Fire();
