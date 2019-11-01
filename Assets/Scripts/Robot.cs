@@ -100,5 +100,6 @@ public class Robot : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
+        Game.RemoveEnemy();
     }
 }
